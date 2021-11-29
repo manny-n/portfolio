@@ -51,7 +51,13 @@ a{
 }
 
 #hero1{
-    background-image: url(media/forest.jpeg);
+    /* background-image: url(media/forest.jpeg); */
     background-repeat: no-repeat;
     background-position: right;
+}
+.hero-text-left{
+    height: 500px
+    width: 100px;;
+    position: relative;
+    float: :left
 }
