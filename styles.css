@@ -2,6 +2,7 @@
 #75a3a7 darker blue
 #8ed944 lime green
 #a1c0c3 very light blue
+#63852d darker green
 */
 
 body{
@@ -22,31 +23,23 @@ body{
 }
 
 #name-title{
-    position: relative;
     font-family: miso-bold;
     font-size: 30px;
-    margin-bottom: 20px;
-    top: 12px;
-    float: left;
     color:white
 }
 
+
 .nav-text{
-    float: right;
     position: relative;
     font-family: miso-bold;
     font-size: 20px;
-    margin-bottom: 20px;
-    top: 30px;
-    text-align: center;
     text-decoration: none;
 }
 
 #header{
-    background-color: #8aba3f;
+    background-color: #63852d;
     box-shadow: 5px 5px 5px rgb(0 0 0 / 75%);
-    position: sticky;
-
+    position: static;
 }
 
 a{
@@ -55,21 +48,125 @@ a{
 }
 
 img{
-    position:relative;
-    border-radius: 75%;
-    width: 75%;
-    background-color: #8aba3f;
+    /* position:relative; */
+    border-radius: 50%;
+    background-color: #63852d;
+}
+
+.hero-img {
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+#hero-img{
+    border-radius: 50%;
+    width: 50%;
+    background-color: #63852d;
+    float: left;
+    height: auto;
 }
 
 .hero1{
     text-align: center;
+
 }
 
-.hero-text{
-    height: auto;
-    width: 25%;
+.hero-text { 
+    display: flex;
+    flex-direction: column;
+    width: 50%;
     float: right;
     /* background-color: #8ed944; */
-    padding-top: 200px;
+}
+
+.hero2{
+    display: flex;
+    align-items: center;
+}
+
+
+.hero-img2{
+    height: 100%;
+    width: 25%;
+    float: right;
+}
+
+.hero-text2{
+    height: 50px;
+    width: 50%;
+    text-align: center;
+}
+
+
+.col{
+    font-size: 35px;
+    height: 50px;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hero-img3{
+    border-radius: 0%;
+    height: 300px;
+    display: flex;
+    align-items: baseline;
+    height: 100%;
+    width: 25%;
+    float: right;
+}
+
+
+#hero-text3{
+    height: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.hero3{
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    color: white;
+}
+
+p{
+    font-size: 20px;
+}
+
+.hero{
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(3, 1fr); 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+}
+
+#email{
+    font-size: 15px;
+}
+
+.links{ 
+    float: right;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 600px){
+    .header, .col, .container, .hero2, .hero3{
+        width: 100%;
+    }
+    .col, #hobbies{
+        height: auto;
+    }
+    #projects{
+        margin-top: auto;
+    }
 }
 
