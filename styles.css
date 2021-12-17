@@ -94,7 +94,7 @@ img{
 }
 
 .hero-text2{
-    height: 50px;
+    height: auto;
     width: 50%;
     text-align: center;
 }
@@ -113,7 +113,6 @@ img{
 
 .hero-img3{
     border-radius: 0%;
-    height: 300px;
     display: flex;
     align-items: baseline;
     height: 100%;
@@ -161,6 +160,7 @@ p{
 @media only screen and (max-width: 600px){
     .header, .col, .container, .hero2, .hero3{
         width: 100%;
+        height: auto;
     }
     .col, #hobbies{
         height: auto;
@@ -169,4 +169,85 @@ p{
         margin-top: auto;
     }
 }
+/* hobbies.html */
+.team-picture{
+    border-radius: 0%;
+    width: 50%;
+    background-color: #63852d;
+    float: left;
+    height: auto;
+}
 
+.team-text{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+#hoco-pic, #group-pic{
+    border-radius: 0%;
+    display: flex;
+    align-items: baseline;
+    height: 100%;
+    width: 25%;
+    float: right;
+}
+
+.hobbies-text{
+    height: auto;
+    width: 50%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+    .team-picture, .team-text, #hoco-pic, .hobbies-text, #group-pic{
+        width: auto%;
+        /* text-align: center; */
+        height: auto;
+    }
+}
+
+/* Projects.html */
+.rice-preps{
+    border-radius: 0%;
+    display: flex;
+    align-items: baseline;
+    height: 100%;
+    width: 25%;
+    float: right;
+}
+}
+
+.rice-text{
+    border-radius: 50%;
+    width: 50%;
+    background-color: #63852d;
+    float: left;
+    height: auto;
+}
+
+.rice-container{
+    padding-top: 10%;
+}
+
+.bb-container{
+    padding-top: 10%;
+}
+
+.bloom-text{
+    border-radius: 50%;
+    width: 50%;
+    float: right;
+    height: auto;
+}
+
+.bloom{
+    border-radius: 0%;
+    display: flex;
+    align-items: baseline;
+    height: 100%;
+    width: 50%;
+    float: left;
+}
